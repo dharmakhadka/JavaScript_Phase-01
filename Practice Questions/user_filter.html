@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Profile Search with Initials</title>
+  <style>
+    .profile {
+      display: flex;
+      align-items: center;
+      border: 1px solid #ccc;
+      padding: 8px 12px;
+      margin: 6px 0;
+      width: 250px;
+      border-radius: 6px;
+    }
+    .initials {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      height: 30px;
+      border-radius: 4px;
+      margin-right: 10px;
+      background-color: #007bff;
+      color: white;
+      font-weight: bold;
+      font-size: 14px;
+      user-select: none;
+    }
+  </style>
+</head>
+<body>
+  <input type="text" id="searchInput" placeholder="Search profiles..." />
+
+  <div id="profileList">
+    <div class="profile">
+      <div class="initials">JD</div>
+      <div class="name">John Doe</div>
+    </div>
+    <div class="profile">
+      <div class="initials">JS</div>
+      <div class="name">Jane Smith</div>
+    </div>
+    <div class="profile">
+      <div class="initials">MJ</div>
+      <div class="name">Michael Johnson</div>
+    </div>
+    <div class="profile">
+      <div class="initials">MW</div>
+      <div class="name">Mary Williams</div>
+    </div>
+    <div class="profile">
+      <div class="initials">PB</div>
+      <div class="name">Patricia Brown</div>
+    </div>
+  </div>
+
+  <script>
+    const search = document.querySelector("#searchInput");
+    const profile = document.querySelector("#profileList .profile");
+
+    search.addEventListener("keyup",function(){
+        const filter = search.value.toLowerCase();
+        
+    })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const searchInput = document.getElementById('searchInput');
+// const profiles = document.querySelectorAll('#profileList .profile');
+
+// searchInput.addEventListener('keyup', function () {
+//   const filter = searchInput.value.toLowerCase();
+
+//   profiles.forEach(profile => {
+//     const name = profile.querySelector('.name').textContent.toLowerCase();
+//     if (name.includes(filter)) {
+//       profile.style.display = 'flex';
+//     } else {
+//       profile.style.display = 'none';
+//     }
+//   });
+// });
+
+
+
+  </script>
+
+</body>
+</html>
