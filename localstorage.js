@@ -1,2 +1,2 @@
-let names = JSON.parse(localStorage.getItem("friends"));
+let names = JSON.parse(localStorage.getItem("Friends"));
 console.log(names);
