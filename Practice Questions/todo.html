@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #abc{
+            align-items: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button id="abc">CLICK HERE !!</button>
+</body>
+<script>
+    let click = document.querySelector("#abc");
+    click.addEventListener("click",function(){
+       if(click.textContent === "CLICK HERE !!")
+       {
+            click.textContent = "HEHEHEHE";
+       }
+       else{
+        click.textContent = "CLICK HERE !!";
+       }
+    });
+</script>
+</html>
