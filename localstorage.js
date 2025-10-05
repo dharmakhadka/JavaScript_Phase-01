@@ -1,1 +1,2 @@
-localStorage.setItem("name",["Ram","Shyam","Krishna"]);
+let names = JSON.parse(localStorage.getItem("friends"));
+console.log(names);
