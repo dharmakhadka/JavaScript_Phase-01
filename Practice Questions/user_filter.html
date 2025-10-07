@@ -56,58 +56,24 @@
   </div>
 
   <script>
-    const search = document.querySelector("#searchInput");
-    const profile = document.querySelector("#profileList .profile");
+  
+  const searchInput = document.getElementById('searchInput');
+  const profiles = document.querySelectorAll('#profileList .profile');
 
-    search.addEventListener("keyup",function(){
-        const filter = search.value.toLowerCase();
-        
-    })
+  searchInput.addEventListener('keyup', function () {
+  const filter = searchInput.value.toLowerCase();
 
+  profiles.forEach(profile => {
+    const name = profile.querySelector('.name').textContent.toLowerCase();
+    if (name.includes(filter)) {
+      profile.style.display = 'flex';
+    } else {
+      profile.style.display = 'none';
+    }
+    });
+  });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const searchInput = document.getElementById('searchInput');
-// const profiles = document.querySelectorAll('#profileList .profile');
-
-// searchInput.addEventListener('keyup', function () {
-//   const filter = searchInput.value.toLowerCase();
-
-//   profiles.forEach(profile => {
-//     const name = profile.querySelector('.name').textContent.toLowerCase();
-//     if (name.includes(filter)) {
-//       profile.style.display = 'flex';
-//     } else {
-//       profile.style.display = 'none';
-//     }
-//   });
-// });
-
-
-
-  </script>
+</script>
 
 </body>
 </html>
